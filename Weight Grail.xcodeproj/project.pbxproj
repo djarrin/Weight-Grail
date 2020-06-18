@@ -16,6 +16,7 @@
 		DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3A249B86C3001513C1 /* Assets.xcassets */; };
 		DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */; };
 		DDA81A4A249B9744001513C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A49249B9744001513C1 /* GoogleService-Info.plist */; };
+		DDA81A4C249B99F6001513C1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A4B249B99F6001513C1 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DDA81A3D249B86C3001513C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA81A3F249B86C3001513C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDA81A49249B9744001513C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDA81A4B249B99F6001513C1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */,
 				DDA81A3F249B86C3001513C1 /* Info.plist */,
 				DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */,
+				DDA81A4B249B99F6001513C1 /* Colors.xcassets */,
 			);
 			path = "Weight Grail";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA81A4C249B99F6001513C1 /* Colors.xcassets in Resources */,
 				DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */,
 				DDA81A4A249B9744001513C1 /* GoogleService-Info.plist in Resources */,
 				DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */,
