@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D40EA44E27875B898AA1709 /* Pods_Weight_Grail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */; };
 		DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A2E249B86C2001513C1 /* AppDelegate.swift */; };
 		DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A30249B86C2001513C1 /* SceneDelegate.swift */; };
 		DDA81A33249B86C2001513C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A32249B86C2001513C1 /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */; };
 		DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3A249B86C3001513C1 /* Assets.xcassets */; };
 		DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */; };
+		DDA81A4A249B9744001513C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A49249B9744001513C1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BB3F5B57AC9E80C3022CA05 /* Pods-Weight Grail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.release.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.release.xcconfig"; sourceTree = "<group>"; };
+		10EB4EC49D9CD1FD81EEA590 /* Pods-Weight Grail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.debug.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.debug.xcconfig"; sourceTree = "<group>"; };
+		360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weight_Grail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA81A2B249B86C2001513C1 /* Weight Grail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Grail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA81A2E249B86C2001513C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA81A30249B86C2001513C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		DDA81A3A249B86C3001513C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA81A3D249B86C3001513C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA81A3F249B86C3001513C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA81A49249B9744001513C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D40EA44E27875B898AA1709 /* Pods_Weight_Grail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1239181ABE810783BCFC903E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		277CC9D05B142B4D1F46C2AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10EB4EC49D9CD1FD81EEA590 /* Pods-Weight Grail.debug.xcconfig */,
+				0BB3F5B57AC9E80C3022CA05 /* Pods-Weight Grail.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DDA81A22249B86C2001513C1 = {
 			isa = PBXGroup;
 			children = (
 				DDA81A2D249B86C2001513C1 /* Weight Grail */,
 				DDA81A2C249B86C2001513C1 /* Products */,
+				277CC9D05B142B4D1F46C2AB /* Pods */,
+				1239181ABE810783BCFC903E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 		DDA81A2D249B86C2001513C1 /* Weight Grail */ = {
 			isa = PBXGroup;
 			children = (
+				DDA81A49249B9744001513C1 /* GoogleService-Info.plist */,
 				DDA81A2E249B86C2001513C1 /* AppDelegate.swift */,
 				DDA81A30249B86C2001513C1 /* SceneDelegate.swift */,
 				DDA81A32249B86C2001513C1 /* ViewController.swift */,
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDA81A42249B86C3001513C1 /* Build configuration list for PBXNativeTarget "Weight Grail" */;
 			buildPhases = (
+				30A937D53C8F14F8343D45BF /* [CP] Check Pods Manifest.lock */,
 				DDA81A27249B86C2001513C1 /* Sources */,
 				DDA81A28249B86C2001513C1 /* Frameworks */,
 				DDA81A29249B86C2001513C1 /* Resources */,
+				158149EC49C4C7FA30BCF954 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */,
+				DDA81A4A249B9744001513C1 /* GoogleService-Info.plist in Resources */,
 				DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */,
 				DDA81A36249B86C2001513C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		158149EC49C4C7FA30BCF954 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weight Grail/Pods-Weight Grail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weight Grail/Pods-Weight Grail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weight Grail/Pods-Weight Grail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30A937D53C8F14F8343D45BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weight Grail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDA81A27249B86C2001513C1 /* Sources */ = {
@@ -286,6 +358,7 @@
 		};
 		DDA81A43249B86C3001513C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EB4EC49D9CD1FD81EEA590 /* Pods-Weight Grail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +377,7 @@
 		};
 		DDA81A44249B86C3001513C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB3F5B57AC9E80C3022CA05 /* Pods-Weight Grail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

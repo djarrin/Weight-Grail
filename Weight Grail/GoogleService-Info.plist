@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>709936288179-0id56jj158netnf66ssqup8d8c188q93.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.709936288179-0id56jj158netnf66ssqup8d8c188q93</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB_eICtRxQJW4hXF0E7EzgS1B7dEpYaAvo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>709936288179</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.digitaldreamcatcher.Weight-Grail</string>
+	<key>PROJECT_ID</key>
+	<string>weight-grail</string>
+	<key>STORAGE_BUCKET</key>
+	<string>weight-grail.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:709936288179:ios:9f22433ea4b1cd9684fbc6</string>
+	<key>DATABASE_URL</key>
+	<string>https://weight-grail.firebaseio.com</string>
+</dict>
+</plist>
