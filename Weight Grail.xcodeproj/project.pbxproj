@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A2E249B86C2001513C1 /* AppDelegate.swift */; };
+		DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A30249B86C2001513C1 /* SceneDelegate.swift */; };
+		DDA81A33249B86C2001513C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A32249B86C2001513C1 /* ViewController.swift */; };
+		DDA81A36249B86C2001513C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A34249B86C2001513C1 /* Main.storyboard */; };
+		DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */; };
+		DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3A249B86C3001513C1 /* Assets.xcassets */; };
+		DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDA81A2B249B86C2001513C1 /* Weight Grail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Grail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA81A2E249B86C2001513C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDA81A30249B86C2001513C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDA81A32249B86C2001513C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDA81A35249B86C2001513C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDA81A38249B86C2001513C1 /* Weight_Grail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weight_Grail.xcdatamodel; sourceTree = "<group>"; };
+		DDA81A3A249B86C3001513C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDA81A3D249B86C3001513C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDA81A3F249B86C3001513C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDA81A28249B86C2001513C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDA81A22249B86C2001513C1 = {
+			isa = PBXGroup;
+			children = (
+				DDA81A2D249B86C2001513C1 /* Weight Grail */,
+				DDA81A2C249B86C2001513C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDA81A2C249B86C2001513C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA81A2B249B86C2001513C1 /* Weight Grail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDA81A2D249B86C2001513C1 /* Weight Grail */ = {
+			isa = PBXGroup;
+			children = (
+				DDA81A2E249B86C2001513C1 /* AppDelegate.swift */,
+				DDA81A30249B86C2001513C1 /* SceneDelegate.swift */,
+				DDA81A32249B86C2001513C1 /* ViewController.swift */,
+				DDA81A34249B86C2001513C1 /* Main.storyboard */,
+				DDA81A3A249B86C3001513C1 /* Assets.xcassets */,
+				DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */,
+				DDA81A3F249B86C3001513C1 /* Info.plist */,
+				DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */,
+			);
+			path = "Weight Grail";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDA81A2A249B86C2001513C1 /* Weight Grail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA81A42249B86C3001513C1 /* Build configuration list for PBXNativeTarget "Weight Grail" */;
+			buildPhases = (
+				DDA81A27249B86C2001513C1 /* Sources */,
+				DDA81A28249B86C2001513C1 /* Frameworks */,
+				DDA81A29249B86C2001513C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weight Grail";
+			productName = "Weight Grail";
+			productReference = DDA81A2B249B86C2001513C1 /* Weight Grail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDA81A23249B86C2001513C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "David Jarrin";
+				TargetAttributes = {
+					DDA81A2A249B86C2001513C1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = DDA81A26249B86C2001513C1 /* Build configuration list for PBXProject "Weight Grail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDA81A22249B86C2001513C1;
+			productRefGroup = DDA81A2C249B86C2001513C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA81A2A249B86C2001513C1 /* Weight Grail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDA81A29249B86C2001513C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */,
+				DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */,
+				DDA81A36249B86C2001513C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDA81A27249B86C2001513C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA81A33249B86C2001513C1 /* ViewController.swift in Sources */,
+				DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */,
+				DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */,
+				DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDA81A34249B86C2001513C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA81A35249B86C2001513C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA81A3D249B86C3001513C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDA81A40249B86C3001513C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDA81A41249B86C3001513C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDA81A43249B86C3001513C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LCZ95D67ZG;
+				INFOPLIST_FILE = "Weight Grail/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitaldreamcatcher.Weight-Grail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDA81A44249B86C3001513C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LCZ95D67ZG;
+				INFOPLIST_FILE = "Weight Grail/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitaldreamcatcher.Weight-Grail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDA81A26249B86C2001513C1 /* Build configuration list for PBXProject "Weight Grail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA81A40249B86C3001513C1 /* Debug */,
+				DDA81A41249B86C3001513C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA81A42249B86C3001513C1 /* Build configuration list for PBXNativeTarget "Weight Grail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA81A43249B86C3001513C1 /* Debug */,
+				DDA81A44249B86C3001513C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDA81A38249B86C2001513C1 /* Weight_Grail.xcdatamodel */,
+			);
+			currentVersion = DDA81A38249B86C2001513C1 /* Weight_Grail.xcdatamodel */;
+			path = Weight_Grail.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DDA81A23249B86C2001513C1 /* Project object */;
+}
