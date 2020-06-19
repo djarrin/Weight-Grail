@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0D40EA44E27875B898AA1709 /* Pods_Weight_Grail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */; };
+		DD7DD846249CD6C8002B8CA2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */; };
 		DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A2E249B86C2001513C1 /* AppDelegate.swift */; };
 		DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A30249B86C2001513C1 /* SceneDelegate.swift */; };
-		DDA81A33249B86C2001513C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A32249B86C2001513C1 /* ViewController.swift */; };
+		DDA81A33249B86C2001513C1 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A32249B86C2001513C1 /* InitViewController.swift */; };
 		DDA81A36249B86C2001513C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A34249B86C2001513C1 /* Main.storyboard */; };
 		DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */; };
 		DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3A249B86C3001513C1 /* Assets.xcassets */; };
@@ -23,10 +24,11 @@
 		0BB3F5B57AC9E80C3022CA05 /* Pods-Weight Grail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.release.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.release.xcconfig"; sourceTree = "<group>"; };
 		10EB4EC49D9CD1FD81EEA590 /* Pods-Weight Grail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.debug.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.debug.xcconfig"; sourceTree = "<group>"; };
 		360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weight_Grail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		DDA81A2B249B86C2001513C1 /* Weight Grail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Grail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA81A2E249B86C2001513C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA81A30249B86C2001513C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDA81A32249B86C2001513C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDA81A32249B86C2001513C1 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		DDA81A35249B86C2001513C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDA81A38249B86C2001513C1 /* Weight_Grail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weight_Grail.xcdatamodel; sourceTree = "<group>"; };
 		DDA81A3A249B86C3001513C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,9 +103,18 @@
 		DD7DD844249CCEE3002B8CA2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DDA81A32249B86C2001513C1 /* ViewController.swift */,
+				DD7DD847249CD872002B8CA2 /* Extensions */,
+				DDA81A32249B86C2001513C1 /* InitViewController.swift */,
+				DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD7DD847249CD872002B8CA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DDA81A22249B86C2001513C1 = {
@@ -152,6 +163,7 @@
 				DDA81A28249B86C2001513C1 /* Frameworks */,
 				DDA81A29249B86C2001513C1 /* Resources */,
 				158149EC49C4C7FA30BCF954 /* [CP] Embed Pods Frameworks */,
+				EAACED17A716A3360D20CD82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +262,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EAACED17A716A3360D20CD82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weight Grail/Pods-Weight Grail-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weight Grail/Pods-Weight Grail-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weight Grail/Pods-Weight Grail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA81A33249B86C2001513C1 /* ViewController.swift in Sources */,
+				DDA81A33249B86C2001513C1 /* InitViewController.swift in Sources */,
 				DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */,
+				DD7DD846249CD6C8002B8CA2 /* AuthViewController.swift in Sources */,
 				DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */,
 				DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */,
 			);

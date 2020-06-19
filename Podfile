@@ -10,5 +10,8 @@ target 'Weight Grail' do
   pod 'Firebase/Analytics'
   #add the Firebase pod for Authentication
   pod 'Firebase/Auth'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Facebook'
 
 end
