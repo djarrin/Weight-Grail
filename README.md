@@ -5,7 +5,6 @@ This project is my final project for the Udacity iOS Nanao degree program.
 Users should be able to do the following in the app
 1) **Login Screen**: Create and account/Sign In either via 
     - traditional means (enter email and choose a password) 
-    - Apple Sign In
     - Google Sign In
     - Facebook Sign In 
     

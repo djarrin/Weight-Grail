@@ -8,5 +8,7 @@ target 'Weight Grail' do
   # Pods for Weight Grail
   # add the Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
+  #add the Firebase pod for Authentication
+  pod 'Firebase/Auth'
 
 end
