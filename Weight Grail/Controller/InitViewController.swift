@@ -8,23 +8,23 @@
 
 import UIKit
 import Firebase
-import FirebaseUI
 
-class InitViewController: UIViewController {
+class InitViewController: UITabBarController {
 
     fileprivate var _authHandle: AuthStateDidChangeListenerHandle!
     var user: User?
     var displayName = "Anonymous"
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAuth()
     }
-    
+
     func configureAuth() {
+            
         // listen for changes in the authorization state
         _authHandle = Auth.auth().addStateDidChangeListener { (auth: Auth, user: User?) in
-
             
             // check if there is a current user
             if let activeUser = user {
@@ -44,7 +44,9 @@ class InitViewController: UIViewController {
     }
     
     func loginSession() {
-        let authViewController = FUIAuth.defaultAuthUI()!.authViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let authViewController = storyboard.instantiateViewController(withIdentifier: "AuthViewController")
+        authViewController.modalPresentationStyle = .fullScreen
         present(authViewController, animated: true, completion: nil)
     }
         
@@ -60,7 +62,6 @@ class InitViewController: UIViewController {
 //            fetchConfig()
         }
     }
-
 
 }
 
