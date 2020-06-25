@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D40EA44E27875B898AA1709 /* Pods_Weight_Grail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */; };
 		DD7DD846249CD6C8002B8CA2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */; };
+		DD97728F24A3FA8D006F4752 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97728E24A3FA8D006F4752 /* LogViewController.swift */; };
 		DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A2E249B86C2001513C1 /* AppDelegate.swift */; };
 		DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A30249B86C2001513C1 /* SceneDelegate.swift */; };
 		DDA81A33249B86C2001513C1 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A32249B86C2001513C1 /* InitViewController.swift */; };
@@ -27,7 +28,7 @@
 		DDCB3A2F24A0EE71003A8A78 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB3A2E24A0EE71003A8A78 /* PrimaryLabel.swift */; };
 		DDDD455824A00F8B009C1227 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455724A00F8B009C1227 /* DashboardViewController.swift */; };
 		DDDD455A24A00F9F009C1227 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455924A00F9F009C1227 /* HistoryViewController.swift */; };
-		DDDD455C24A00FB0009C1227 /* LogScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455B24A00FB0009C1227 /* LogScreenViewController.swift */; };
+		DDDD455C24A00FB0009C1227 /* LogWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455B24A00FB0009C1227 /* LogWeightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		10EB4EC49D9CD1FD81EEA590 /* Pods-Weight Grail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.debug.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.debug.xcconfig"; sourceTree = "<group>"; };
 		360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weight_Grail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		DD97728E24A3FA8D006F4752 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		DDA81A2B249B86C2001513C1 /* Weight Grail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Grail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA81A2E249B86C2001513C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA81A30249B86C2001513C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		DDCB3A2E24A0EE71003A8A78 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
 		DDDD455724A00F8B009C1227 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DDDD455924A00F9F009C1227 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		DDDD455B24A00FB0009C1227 /* LogScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogScreenViewController.swift; sourceTree = "<group>"; };
+		DDDD455B24A00FB0009C1227 /* LogWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWeightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +134,10 @@
 				DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */,
 				DDDD455724A00F8B009C1227 /* DashboardViewController.swift */,
 				DDDD455924A00F9F009C1227 /* HistoryViewController.swift */,
-				DDDD455B24A00FB0009C1227 /* LogScreenViewController.swift */,
+				DDDD455B24A00FB0009C1227 /* LogWeightViewController.swift */,
 				DDADB97724A2140F006ACB4E /* SignUpViewController.swift */,
 				DDADB97924A2263B006ACB4E /* AccountViewController.swift */,
+				DD97728E24A3FA8D006F4752 /* LogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,9 +330,10 @@
 				DDA81A33249B86C2001513C1 /* InitViewController.swift in Sources */,
 				DDCB3A2F24A0EE71003A8A78 /* PrimaryLabel.swift in Sources */,
 				DDADB97A24A2263B006ACB4E /* AccountViewController.swift in Sources */,
+				DD97728F24A3FA8D006F4752 /* LogViewController.swift in Sources */,
 				DDCB3A2924A0EC63003A8A78 /* Colors.swift in Sources */,
 				DDCB3A2B24A0EDB8003A8A78 /* PrimaryButton.swift in Sources */,
-				DDDD455C24A00FB0009C1227 /* LogScreenViewController.swift in Sources */,
+				DDDD455C24A00FB0009C1227 /* LogWeightViewController.swift in Sources */,
 				DDDD455824A00F8B009C1227 /* DashboardViewController.swift in Sources */,
 				DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */,
 				DD7DD846249CD6C8002B8CA2 /* AuthViewController.swift in Sources */,

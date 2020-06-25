@@ -13,5 +13,11 @@ target 'Weight Grail' do
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Google'
   pod 'FirebaseUI/Facebook'
-
+  
+  # Firebase Realtime Database
+  pod 'Firebase/Database'
+  
+  # Firebase Storage
+  pod 'Firebase/Storage'
+  
 end
