@@ -20,4 +20,7 @@ target 'Weight Grail' do
   # Firebase Storage
   pod 'Firebase/Storage'
   
+  #Barcode Scanner
+  pod 'BarcodeScanner'
+  
 end

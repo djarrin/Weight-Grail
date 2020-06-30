@@ -4,6 +4,7 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
+  - BarcodeScanner (4.1.3)
   - FBSDKCoreKit (5.15.1):
     - FBSDKCoreKit/Basics (= 5.15.1)
     - FBSDKCoreKit/Core (= 5.15.1)
@@ -127,6 +128,7 @@ PODS:
   - nanopb/encode (0.3.9011)
 
 DEPENDENCIES:
+  - BarcodeScanner
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Database
@@ -138,6 +140,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppAuth
+    - BarcodeScanner
     - FBSDKCoreKit
     - FBSDKLoginKit
     - Firebase
@@ -163,6 +166,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
   FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
   FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
   Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
@@ -186,6 +190,6 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 2cb4e71a66c716ab2ae1f395c25b1242d3249516
+PODFILE CHECKSUM: 5bd1d6720580726f01411f9ff7133c0cc14428fa
 
 COCOAPODS: 1.9.1

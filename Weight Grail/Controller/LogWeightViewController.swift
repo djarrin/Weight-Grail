@@ -17,7 +17,7 @@ class LogWeightViewController: UITableViewController, UIPickerViewDelegate, UIPi
     var selectedWeight: Int!
     
     let pickerData = Array(1...600)
-    let defaultWeight = 1
+    let defaultWeight = 200
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var weightPicker: UIPickerView!

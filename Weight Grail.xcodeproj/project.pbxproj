@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0D40EA44E27875B898AA1709 /* Pods_Weight_Grail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */; };
+		DD0A860524A61B8B00541731 /* EdamamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860424A61B8B00541731 /* EdamamClient.swift */; };
+		DD0A860724A620A400541731 /* EdamamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860624A620A400541731 /* EdamamResponse.swift */; };
+		DD0A860A24A6221C00541731 /* EdamamParsedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */; };
+		DD0A860C24A6255300541731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860B24A6255300541731 /* Food.swift */; };
+		DD7786E924AB90CA00BAA2AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */; };
+		DD7786EB24AB97A200BAA2AA /* ParsedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */; };
+		DD7786ED24AB97B200BAA2AA /* HintsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7786EC24AB97B200BAA2AA /* HintsObject.swift */; };
 		DD7DD846249CD6C8002B8CA2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */; };
 		DD97728F24A3FA8D006F4752 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97728E24A3FA8D006F4752 /* LogViewController.swift */; };
 		DDA81A2F249B86C2001513C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A2E249B86C2001513C1 /* AppDelegate.swift */; };
@@ -17,7 +24,6 @@
 		DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDA81A37249B86C2001513C1 /* Weight_Grail.xcdatamodeld */; };
 		DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3A249B86C3001513C1 /* Assets.xcassets */; };
 		DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A3C249B86C3001513C1 /* LaunchScreen.storyboard */; };
-		DDA81A4A249B9744001513C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A49249B9744001513C1 /* GoogleService-Info.plist */; };
 		DDA81A4C249B99F6001513C1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA81A4B249B99F6001513C1 /* Colors.xcassets */; };
 		DDADB97824A2140F006ACB4E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB97724A2140F006ACB4E /* SignUpViewController.swift */; };
 		DDADB97A24A2263B006ACB4E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDADB97924A2263B006ACB4E /* AccountViewController.swift */; };
@@ -29,12 +35,20 @@
 		DDDD455824A00F8B009C1227 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455724A00F8B009C1227 /* DashboardViewController.swift */; };
 		DDDD455A24A00F9F009C1227 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455924A00F9F009C1227 /* HistoryViewController.swift */; };
 		DDDD455C24A00FB0009C1227 /* LogWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD455B24A00FB0009C1227 /* LogWeightViewController.swift */; };
+		DDE8959F24A55A3800108550 /* LogMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8959E24A55A3700108550 /* LogMealViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BB3F5B57AC9E80C3022CA05 /* Pods-Weight Grail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.release.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.release.xcconfig"; sourceTree = "<group>"; };
 		10EB4EC49D9CD1FD81EEA590 /* Pods-Weight Grail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weight Grail.debug.xcconfig"; path = "Target Support Files/Pods-Weight Grail/Pods-Weight Grail.debug.xcconfig"; sourceTree = "<group>"; };
 		360820C4361F706A92DA5AAB /* Pods_Weight_Grail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weight_Grail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0A860424A61B8B00541731 /* EdamamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamClient.swift; sourceTree = "<group>"; };
+		DD0A860624A620A400541731 /* EdamamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamResponse.swift; sourceTree = "<group>"; };
+		DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamParsedResponse.swift; sourceTree = "<group>"; };
+		DD0A860B24A6255300541731 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedObject.swift; sourceTree = "<group>"; };
+		DD7786EC24AB97B200BAA2AA /* HintsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintsObject.swift; sourceTree = "<group>"; };
 		DD7DD845249CD6C8002B8CA2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		DD97728E24A3FA8D006F4752 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		DDA81A2B249B86C2001513C1 /* Weight Grail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Grail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +60,6 @@
 		DDA81A3A249B86C3001513C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA81A3D249B86C3001513C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA81A3F249B86C3001513C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDA81A49249B9744001513C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DDA81A4B249B99F6001513C1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DDADB97724A2140F006ACB4E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDADB97924A2263B006ACB4E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +71,7 @@
 		DDDD455724A00F8B009C1227 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DDDD455924A00F9F009C1227 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		DDDD455B24A00FB0009C1227 /* LogWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWeightViewController.swift; sourceTree = "<group>"; };
+		DDE8959E24A55A3700108550 /* LogMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMealViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DD0A860324A61B6600541731 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DD0A860824A620AB00541731 /* EdamamResponses */,
+				DD0A860424A61B8B00541731 /* EdamamClient.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DD0A860824A620AB00541731 /* EdamamResponses */ = {
+			isa = PBXGroup;
+			children = (
+				DD0A860624A620A400541731 /* EdamamResponse.swift */,
+				DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */,
+				DD0A860B24A6255300541731 /* Food.swift */,
+				DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */,
+				DD7786EC24AB97B200BAA2AA /* HintsObject.swift */,
+			);
+			path = EdamamResponses;
+			sourceTree = "<group>";
+		};
 		DD7DD840249CCE8D002B8CA2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +136,7 @@
 		DD7DD841249CCEA1002B8CA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DD0A860324A61B6600541731 /* Request */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +174,7 @@
 				DDADB97724A2140F006ACB4E /* SignUpViewController.swift */,
 				DDADB97924A2263B006ACB4E /* AccountViewController.swift */,
 				DD97728E24A3FA8D006F4752 /* LogViewController.swift */,
+				DDE8959E24A55A3700108550 /* LogMealViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +190,7 @@
 		DDA81A22249B86C2001513C1 = {
 			isa = PBXGroup;
 			children = (
+				DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */,
 				DDA81A2D249B86C2001513C1 /* Weight Grail */,
 				DDA81A2C249B86C2001513C1 /* Products */,
 				277CC9D05B142B4D1F46C2AB /* Pods */,
@@ -176,7 +214,6 @@
 				DD7DD842249CCEB8002B8CA2 /* View */,
 				DD7DD841249CCEA1002B8CA2 /* Model */,
 				DD7DD840249CCE8D002B8CA2 /* Assets */,
-				DDA81A49249B9744001513C1 /* GoogleService-Info.plist */,
 				DDA81A2E249B86C2001513C1 /* AppDelegate.swift */,
 				DDA81A30249B86C2001513C1 /* SceneDelegate.swift */,
 				DDA81A3F249B86C3001513C1 /* Info.plist */,
@@ -255,7 +292,7 @@
 			files = (
 				DDA81A4C249B99F6001513C1 /* Colors.xcassets in Resources */,
 				DDA81A3E249B86C3001513C1 /* LaunchScreen.storyboard in Resources */,
-				DDA81A4A249B9744001513C1 /* GoogleService-Info.plist in Resources */,
+				DD7786E924AB90CA00BAA2AA /* GoogleService-Info.plist in Resources */,
 				DDA81A3B249B86C3001513C1 /* Assets.xcassets in Resources */,
 				DDA81A36249B86C2001513C1 /* Main.storyboard in Resources */,
 			);
@@ -327,10 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0A860C24A6255300541731 /* Food.swift in Sources */,
 				DDA81A33249B86C2001513C1 /* InitViewController.swift in Sources */,
 				DDCB3A2F24A0EE71003A8A78 /* PrimaryLabel.swift in Sources */,
 				DDADB97A24A2263B006ACB4E /* AccountViewController.swift in Sources */,
 				DD97728F24A3FA8D006F4752 /* LogViewController.swift in Sources */,
+				DD0A860A24A6221C00541731 /* EdamamParsedResponse.swift in Sources */,
 				DDCB3A2924A0EC63003A8A78 /* Colors.swift in Sources */,
 				DDCB3A2B24A0EDB8003A8A78 /* PrimaryButton.swift in Sources */,
 				DDDD455C24A00FB0009C1227 /* LogWeightViewController.swift in Sources */,
@@ -340,7 +379,12 @@
 				DDADB97F24A22A8C006ACB4E /* FormController.swift in Sources */,
 				DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */,
 				DDDD455A24A00F9F009C1227 /* HistoryViewController.swift in Sources */,
+				DD7786EB24AB97A200BAA2AA /* ParsedObject.swift in Sources */,
+				DDE8959F24A55A3800108550 /* LogMealViewController.swift in Sources */,
+				DD0A860724A620A400541731 /* EdamamResponse.swift in Sources */,
+				DD7786ED24AB97B200BAA2AA /* HintsObject.swift in Sources */,
 				DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */,
+				DD0A860524A61B8B00541731 /* EdamamClient.swift in Sources */,
 				DDADB97824A2140F006ACB4E /* SignUpViewController.swift in Sources */,
 				DDCB3A2D24A0EE2A003A8A78 /* PrimaryTextField.swift in Sources */,
 			);
@@ -418,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -472,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

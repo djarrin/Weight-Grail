@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:709936288179:ios:9f22433ea4b1cd9684fbc6</string>
+	<string>1:709936288179:ios:a8b74a2c96ad638b84fbc6</string>
 	<key>DATABASE_URL</key>
 	<string>https://weight-grail.firebaseio.com</string>
 </dict>
