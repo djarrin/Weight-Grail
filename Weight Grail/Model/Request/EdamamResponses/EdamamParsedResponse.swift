@@ -10,6 +10,6 @@ import Foundation
 
 struct EdamamParsedResponse: Codable {
     let text: String?
-    let parsed: [ParsedObject]?
+//    let parsed: [ParsedObject]?
     let hints: [HintsObject]?
 }

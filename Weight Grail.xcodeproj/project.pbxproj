@@ -12,6 +12,7 @@
 		DD0A860724A620A400541731 /* EdamamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860624A620A400541731 /* EdamamResponse.swift */; };
 		DD0A860A24A6221C00541731 /* EdamamParsedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */; };
 		DD0A860C24A6255300541731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860B24A6255300541731 /* Food.swift */; };
+		DD49FEC224B0B25900FB7246 /* SearchFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD49FEC124B0B25900FB7246 /* SearchFoodViewController.swift */; };
 		DD7786E924AB90CA00BAA2AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */; };
 		DD7786EB24AB97A200BAA2AA /* ParsedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */; };
 		DD7786ED24AB97B200BAA2AA /* HintsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7786EC24AB97B200BAA2AA /* HintsObject.swift */; };
@@ -46,6 +47,7 @@
 		DD0A860624A620A400541731 /* EdamamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamResponse.swift; sourceTree = "<group>"; };
 		DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamParsedResponse.swift; sourceTree = "<group>"; };
 		DD0A860B24A6255300541731 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DD49FEC124B0B25900FB7246 /* SearchFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFoodViewController.swift; sourceTree = "<group>"; };
 		DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedObject.swift; sourceTree = "<group>"; };
 		DD7786EC24AB97B200BAA2AA /* HintsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintsObject.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				DDADB97924A2263B006ACB4E /* AccountViewController.swift */,
 				DD97728E24A3FA8D006F4752 /* LogViewController.swift */,
 				DDE8959E24A55A3700108550 /* LogMealViewController.swift */,
+				DD49FEC124B0B25900FB7246 /* SearchFoodViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				DDA81A39249B86C2001513C1 /* Weight_Grail.xcdatamodeld in Sources */,
 				DD0A860524A61B8B00541731 /* EdamamClient.swift in Sources */,
 				DDADB97824A2140F006ACB4E /* SignUpViewController.swift in Sources */,
+				DD49FEC224B0B25900FB7246 /* SearchFoodViewController.swift in Sources */,
 				DDCB3A2D24A0EE2A003A8A78 /* PrimaryTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,16 +13,17 @@ class Food: Codable {
     let label: String
     let category: String
     let categoryLabel: String
-    let servingsPerContainer: Double
+    let servingsPerContainer: Double?
+    let image: String?
     let nutrients: Nutrients
 }
 
 class Nutrients: Codable {
-    let cal: Double
-    let procnt: Double
-    let fat: Double
-    let chocdf: Double
-    let fibtg: Double
+    let cal: Double?
+    let procnt: Double?
+    let fat: Double?
+    let chocdf: Double?
+    let fibtg: Double?
     
     
     enum CodingKeys: String, CodingKey {

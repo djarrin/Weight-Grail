@@ -21,6 +21,7 @@ class LogMealViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var mealPicker: UIPickerView!
     @IBOutlet weak var mealLabel: UILabel!
+    @IBOutlet weak var scanBarCodeButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -28,10 +29,19 @@ class LogMealViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         mealPicker.delegate = self
         mealPicker.dataSource = self
         configureDatabaseRef()
+        scanBarCodeButton.isHidden = !UIImagePickerController.isSourceTypeAvailable(.camera)
     }
     
     @IBAction func searchByName() {
-        
+        let logMealViewController = self
+        let searchByNameController = self.storyboard!.instantiateViewController(withIdentifier: "SearchFoodViewController") as! SearchFoodViewController
+        searchByNameController.logMealViewController = logMealViewController
+        self.navigationController?.pushViewController(searchByNameController, animated: true)
+    }
+    
+    func addMeal(name: String, nutrientsFacts: Nutrients?) {
+        mealLabel.text = name
+        nutrients = nutrientsFacts
     }
     
     @IBAction func searchByBarcode() {
@@ -72,8 +82,7 @@ extension LogMealViewController: BarcodeScannerCodeDelegate, BarcodeScannerError
         EdamamClient.foodSearchByBarcode(barcode: code) { (response, error) in
             if let response = response {
                 let firstFood = response.hints?[0]
-                self.mealLabel.text = firstFood?.food.label
-                self.nutrients = firstFood?.food.nutrients
+                self.addMeal(name: firstFood?.food.label ?? "", nutrientsFacts: firstFood?.food.nutrients ?? nil)
             } else {
                 print(error?.localizedDescription)
             }
