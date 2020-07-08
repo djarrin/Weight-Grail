@@ -51,7 +51,7 @@ class LogWeightViewController: UITableViewController, UIPickerViewDelegate, UIPi
         formatter.dateFormat = "MM-dd-yyyy"
         let dateString = formatter.string(from: datePicker.date)
         let basePath = "users/\(Auth.auth().currentUser!.uid)/weight-log/\(dateString)"
-        databaseRef.child("\(basePath)/weight").setValue(selectedWeight)
+        databaseRef.child("\(basePath)/\(Constants.WeightFields.weight)").setValue(selectedWeight)
         if let newImage = uploadedImage.image {
             let data = newImage.jpegData(compressionQuality: 0.8)!
             let newMetadata = StorageMetadata()
@@ -59,7 +59,7 @@ class LogWeightViewController: UITableViewController, UIPickerViewDelegate, UIPi
             _ = storageRef.child("\(basePath)/image.jpg").putData(data, metadata: newMetadata) {(metadata, error) in
                 guard let metadata = metadata else {return}
                 
-                self.databaseRef.child("\(basePath)/imagePath").setValue(metadata.path)
+                self.databaseRef.child("\(basePath)/\(Constants.WeightFields.imagePath)").setValue(metadata.path)
             }
         }
     }

@@ -12,6 +12,8 @@
 		DD0A860724A620A400541731 /* EdamamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860624A620A400541731 /* EdamamResponse.swift */; };
 		DD0A860A24A6221C00541731 /* EdamamParsedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */; };
 		DD0A860C24A6255300541731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0A860B24A6255300541731 /* Food.swift */; };
+		DD1F66AF24B536A10043B123 /* FireBaseContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1F66AE24B536A10043B123 /* FireBaseContants.swift */; };
+		DD39073924B5D6C600953729 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39073824B5D6C600953729 /* HistoryDetailViewController.swift */; };
 		DD49FEC224B0B25900FB7246 /* SearchFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD49FEC124B0B25900FB7246 /* SearchFoodViewController.swift */; };
 		DD7786E924AB90CA00BAA2AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */; };
 		DD7786EB24AB97A200BAA2AA /* ParsedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */; };
@@ -47,6 +49,8 @@
 		DD0A860624A620A400541731 /* EdamamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamResponse.swift; sourceTree = "<group>"; };
 		DD0A860924A6221C00541731 /* EdamamParsedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamParsedResponse.swift; sourceTree = "<group>"; };
 		DD0A860B24A6255300541731 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DD1F66AE24B536A10043B123 /* FireBaseContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseContants.swift; sourceTree = "<group>"; };
+		DD39073824B5D6C600953729 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
 		DD49FEC124B0B25900FB7246 /* SearchFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFoodViewController.swift; sourceTree = "<group>"; };
 		DD7786E824AB90CA00BAA2AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD7786EA24AB97A200BAA2AA /* ParsedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedObject.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				DD0A860324A61B6600541731 /* Request */,
+				DD1F66AE24B536A10043B123 /* FireBaseContants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				DD97728E24A3FA8D006F4752 /* LogViewController.swift */,
 				DDE8959E24A55A3700108550 /* LogMealViewController.swift */,
 				DD49FEC124B0B25900FB7246 /* SearchFoodViewController.swift */,
+				DD39073824B5D6C600953729 /* HistoryDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD39073924B5D6C600953729 /* HistoryDetailViewController.swift in Sources */,
 				DD0A860C24A6255300541731 /* Food.swift in Sources */,
 				DDA81A33249B86C2001513C1 /* InitViewController.swift in Sources */,
 				DDCB3A2F24A0EE71003A8A78 /* PrimaryLabel.swift in Sources */,
@@ -382,6 +389,7 @@
 				DDADB97F24A22A8C006ACB4E /* FormController.swift in Sources */,
 				DDA81A31249B86C2001513C1 /* SceneDelegate.swift in Sources */,
 				DDDD455A24A00F9F009C1227 /* HistoryViewController.swift in Sources */,
+				DD1F66AF24B536A10043B123 /* FireBaseContants.swift in Sources */,
 				DD7786EB24AB97A200BAA2AA /* ParsedObject.swift in Sources */,
 				DDE8959F24A55A3800108550 /* LogMealViewController.swift in Sources */,
 				DD0A860724A620A400541731 /* EdamamResponse.swift in Sources */,

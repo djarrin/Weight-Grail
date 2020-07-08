@@ -54,9 +54,6 @@ class LogMealViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     @IBAction func logMeal() {
-        print("selectedMeal \(selectedMeal)")
-        print("nutrients \(nutrients)")
-        
         let formatter = DateFormatter()
         formatter.dateFormat = "MM-dd-yyyy"
         let dateString = formatter.string(from: datePicker.date)
@@ -78,7 +75,6 @@ class LogMealViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
 extension LogMealViewController: BarcodeScannerCodeDelegate, BarcodeScannerErrorDelegate, BarcodeScannerDismissalDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
-         print(code)
         EdamamClient.foodSearchByBarcode(barcode: code) { (response, error) in
             if let response = response {
                 let firstFood = response.hints?[0]
