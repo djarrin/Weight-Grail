@@ -9,7 +9,7 @@ Users should be able to do the following in the app
     
 2) **Dashboard Screen**:
     - View latest Logs
-    - Yesterdays weight status
+    - View latest weight status
 3) **History Screen**:
     - View previously logged days
     - Be able to click into days and see details
