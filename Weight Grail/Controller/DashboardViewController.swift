@@ -38,15 +38,17 @@ class DashboardViewController: UIViewController {
     
     func configureDatabase() {
         ref = Database.database().reference()
-        let currentUserID = Auth.auth().currentUser!.uid
-        _weightRefHandle = ref.child("users").child(currentUserID).child(Constants.weightBase).observe(.childAdded) { (snapshot: DataSnapshot)in
-            self.weights.append(snapshot)
-            self.setChartData()
-            self.setLastWeightLoggedData()
-        }
-        _mealRefHandle = ref.child("users").child(currentUserID).child(Constants.mealBase).observe(.childAdded) { (snapshot: DataSnapshot)in
-            self.meals.append(snapshot)
-            self.setLastMealLoggedData()
+        let currentUserID = Auth.auth().currentUser?.uid
+        if let currentUserID = currentUserID {
+            _weightRefHandle = ref.child("users").child(currentUserID).child(Constants.weightBase).observe(.childAdded) { (snapshot: DataSnapshot)in
+                self.weights.append(snapshot)
+                self.setChartData()
+                self.setLastWeightLoggedData()
+            }
+            _mealRefHandle = ref.child("users").child(currentUserID).child(Constants.mealBase).observe(.childAdded) { (snapshot: DataSnapshot)in
+                self.meals.append(snapshot)
+                self.setLastMealLoggedData()
+            }
         }
     }
     

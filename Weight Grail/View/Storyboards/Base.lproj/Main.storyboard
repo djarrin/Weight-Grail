@@ -714,9 +714,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2C-WQ-PKl">
-                                <rect key="frame" x="183" y="144" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2C-WQ-PKl">
+                                <rect key="frame" x="183" y="138" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logout" destination="nhf-1S-aQe" eventType="touchUpInside" id="OTd-Rv-pxS"/>
@@ -724,6 +723,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h2C-WQ-PKl" firstAttribute="centerX" secondItem="CCj-np-eEg" secondAttribute="centerX" id="gBf-if-4hr"/>
+                            <constraint firstItem="h2C-WQ-PKl" firstAttribute="top" secondItem="CCj-np-eEg" secondAttribute="top" constant="50" id="vSO-Rh-8GD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CCj-np-eEg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="person.circle" catalog="system" id="Zdr-XG-1PR"/>

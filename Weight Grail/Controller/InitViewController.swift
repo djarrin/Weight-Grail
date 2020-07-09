@@ -25,7 +25,6 @@ class InitViewController: UITabBarController {
             
         // listen for changes in the authorization state
         _authHandle = Auth.auth().addStateDidChangeListener { (auth: Auth, user: User?) in
-            
             // check if there is a current user
             if let activeUser = user {
                 // check if the current app user is the current FIRUser
