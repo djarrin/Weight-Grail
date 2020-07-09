@@ -24,3 +24,9 @@ Users should be able to do the following in the app
 
 ## Build Instructions
 1) Navigate to the base of the project and run pod install
+2) Open Weight Grail.xcworkspace in xcode and press run
+3) You may or may not have to adjust signing settings to something you own
+
+## First Time Run
+You will have to create an account, this can either be done via a gmail auth flow or by clicking sign up
+on the auth screen and entering an email with a password.
