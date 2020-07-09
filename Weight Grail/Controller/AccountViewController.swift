@@ -20,7 +20,9 @@ class AccountViewController: UIViewController {
         do {
            try Auth.auth().signOut()
         } catch {
-            // TODO:: put an alert here saying logout failed
+            let alert = UIAlertController(title: "Error", message: "Unable to logout", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 

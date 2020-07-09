@@ -31,13 +31,11 @@ class InitViewController: UITabBarController {
                 // check if the current app user is the current FIRUser
                 if self.user != activeUser {
                     self.user = activeUser
-                    self.signedInStatus(isSignedIn: true)
                     let name = user!.email!.components(separatedBy: "@")[0]
                     self.displayName = name
                 }
             } else {
                 // user must sign in
-                self.signedInStatus(isSignedIn: false)
                 self.loginSession()
             }
         }
@@ -50,18 +48,5 @@ class InitViewController: UITabBarController {
         present(authViewController, animated: true, completion: nil)
     }
         
-    func signedInStatus(isSignedIn: Bool) {
-
-        
-        if isSignedIn {
-            
-//            subscribeToKeyboardNotifications()
-//            configureDatabase()
-//            configureStorage()
-//            configureRemoteConfig()
-//            fetchConfig()
-        }
-    }
-
 }
 

@@ -22,6 +22,7 @@ class HistoryDetailViewController: UITableViewController {
     @IBOutlet weak var HistoryImage: UIImageView!
     @IBOutlet weak var WeightValueLabel: UILabel!
     @IBOutlet weak var CalorieValueLabel: UILabel!
+    @IBOutlet weak var loadingIndicatior: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,12 +56,17 @@ class HistoryDetailViewController: UITableViewController {
             storageRef = Storage.storage().reference(withPath: imagePath)
             storageRef.getData(maxSize: 5 * 1024 * 1024) { data, error in
               if let error = error {
-                print(error)
+                let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
               } else {
                 let image = UIImage(data: data!)
                 self.HistoryImage.image = image
               }
+              self.loadingIndicatior.stopAnimating()
             }
+        } else {
+            loadingIndicatior.stopAnimating()
         }
     }
     

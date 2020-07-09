@@ -29,6 +29,9 @@ class SearchFoodViewController: UITableViewController, UISearchBarDelegate {
                     self.tableView.reloadData()
                 } else {
                     print(error)
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
         }

@@ -125,6 +125,10 @@
                                                     <rect key="frame" x="0.0" y="11.5" width="414" height="148"/>
                                                     <color key="tintColor" name="gray-light"/>
                                                 </imageView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ybp-Na-PlT">
+                                                    <rect key="frame" x="197" y="65" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Zfa-3T-n1B" firstAttribute="height" secondItem="Qp1-vL-lph" secondAttribute="height" id="3Ot-PG-U1f"/>
@@ -212,11 +216,12 @@
                         <outlet property="CalorieValueLabel" destination="gTs-LX-TLN" id="idf-Xz-4tC"/>
                         <outlet property="HistoryImage" destination="Zfa-3T-n1B" id="bcA-8N-yBD"/>
                         <outlet property="WeightValueLabel" destination="Hqg-Sm-dI9" id="i0f-ic-9Ax"/>
+                        <outlet property="loadingIndicatior" destination="Ybp-Na-PlT" id="SlO-Kc-6l1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGo-hE-IFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3999" y="196"/>
+            <point key="canvasLocation" x="3998.5507246376815" y="195.53571428571428"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="ucJ-bg-aY3">

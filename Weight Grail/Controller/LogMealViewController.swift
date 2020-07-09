@@ -80,7 +80,10 @@ extension LogMealViewController: BarcodeScannerCodeDelegate, BarcodeScannerError
                 let firstFood = response.hints?[0]
                 self.addMeal(name: firstFood?.food.label ?? "", nutrientsFacts: firstFood?.food.nutrients ?? nil)
             } else {
-                print(error?.localizedDescription)
+                print(error)
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
             controller.dismiss(animated: true, completion: nil)
         }
@@ -88,7 +91,10 @@ extension LogMealViewController: BarcodeScannerCodeDelegate, BarcodeScannerError
     }
     
     func scanner(_ controller: BarcodeScannerViewController, didReceiveError error: Error) {
-      print(error)
+        print(error)
+        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func scannerDidDismiss(_ controller: BarcodeScannerViewController) {
