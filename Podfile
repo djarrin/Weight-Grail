@@ -23,4 +23,7 @@ target 'Weight Grail' do
   #Barcode Scanner
   pod 'BarcodeScanner'
   
+  # https://github.com/danielgindi/Charts charts library
+  pod 'Charts'
+  
 end

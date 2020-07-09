@@ -63,6 +63,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="red-ln-ghc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="orange-sunset"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="blue-sky"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="W5B-nq-J6n" kind="relationship" relationship="rootViewController" id="wcP-Pd-gkl"/>
@@ -71,6 +75,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9k-6T-Hso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1977" y="196"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="kpu-n2-Wmb">
+            <objects>
+                <navigationController id="Wna-LU-8JU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="book.circle" catalog="system" id="jwx-fR-789">
+                        <color key="badgeColor" name="orange-sunset"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oLS-8M-84d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="orange-sunset"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="blue-sky"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="blue-sky"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gyh-jZ-H0m" kind="relationship" relationship="rootViewController" id="mt9-76-DI7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sb0-a4-TYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="-560"/>
         </scene>
         <!--History Detail View Controller-->
         <scene sceneID="W8Z-KY-JVp">
@@ -194,14 +225,94 @@
                     <view key="view" contentMode="scaleToFill" id="A5G-dL-wL0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rrj-CY-Rly">
+                                <rect key="frame" x="21.5" y="88" width="372.5" height="540"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-Bd-zAP" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="0.0" width="372.5" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="aKj-63-2JO"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Logged Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duW-62-gKq">
+                                        <rect key="frame" x="0.0" y="315" width="372.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="S19-bU-HZd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWv-Py-PmV">
+                                        <rect key="frame" x="0.0" y="355" width="372.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="h4A-QU-Vjr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Logged Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-Bb-nEK">
+                                        <rect key="frame" x="0.0" y="395" width="372.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="f3U-j6-WFG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNR-LC-ctZ">
+                                        <rect key="frame" x="0.0" y="435" width="372.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="hFJ-Hj-tS6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Logged Calorie Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idW-TU-Hrz">
+                                        <rect key="frame" x="0.0" y="475" width="372.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="kcN-iH-DHa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C05-BO-rvJ">
+                                        <rect key="frame" x="0.0" y="515" width="372.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="ANX-vr-zJt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rrj-CY-Rly" firstAttribute="width" secondItem="FF0-RD-r8I" secondAttribute="width" multiplier="0.9" id="2VL-Ea-uhb"/>
+                            <constraint firstItem="Rrj-CY-Rly" firstAttribute="top" secondItem="FF0-RD-r8I" secondAttribute="top" id="9UC-LO-jSH"/>
+                            <constraint firstItem="FF0-RD-r8I" firstAttribute="trailing" secondItem="Rrj-CY-Rly" secondAttribute="trailing" constant="20" id="pQf-IR-wYJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FF0-RD-r8I"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dashboard" image="book.circle" catalog="system" id="jWF-lR-epM"/>
+                    <navigationItem key="navigationItem" id="PHq-Ce-MPu"/>
+                    <connections>
+                        <outlet property="lastCalorieLogged" destination="C05-BO-rvJ" id="TsR-SA-De4"/>
+                        <outlet property="lastDateLogged" destination="BWv-Py-PmV" id="jb3-0n-XJ6"/>
+                        <outlet property="lastWeightLogged" destination="eNR-LC-ctZ" id="yzd-ha-zKc"/>
+                        <outlet property="lineChart" destination="3AR-Bd-zAP" id="nBi-0b-Ivr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvV-CW-FHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="-560"/>
+            <point key="canvasLocation" x="3029" y="-560"/>
         </scene>
         <!--Init View Controller-->
         <scene sceneID="GSO-eR-K59">
@@ -210,13 +321,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7TK-pp-cSF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="orange-sunset"/>
+                        <color key="selectedImageTintColor" name="blue-sky"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Gyh-jZ-H0m" kind="relationship" relationship="viewControllers" id="ffp-uj-vOW"/>
-                        <segue destination="DQD-Nv-17V" kind="relationship" relationship="viewControllers" id="hn7-96-qtl"/>
-                        <segue destination="nhf-1S-aQe" kind="relationship" relationship="viewControllers" id="A0f-ev-5Ku"/>
+                        <segue destination="Wna-LU-8JU" kind="relationship" relationship="viewControllers" id="DuF-XT-3d7"/>
                         <segue destination="tWU-WG-Z4l" kind="relationship" relationship="viewControllers" id="lfE-4g-WiZ"/>
+                        <segue destination="DQD-Nv-17V" kind="relationship" relationship="viewControllers" id="hn7-96-qtl"/>
+                        <segue destination="GTm-MB-kLC" kind="relationship" relationship="viewControllers" id="ayz-Ub-E6u"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hut-Jb-bDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,7 +344,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kqq-Ic-kXs">
-                                <rect key="frame" x="15" y="88" width="384" height="115"/>
+                                <rect key="frame" x="15" y="113" width="384" height="115"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAp-h3-3G4" customClass="PrimaryButton" customModule="Weight_Grail" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
@@ -263,7 +375,7 @@
                         <constraints>
                             <constraint firstItem="Kqq-Ic-kXs" firstAttribute="leading" secondItem="q31-bg-lCF" secondAttribute="leading" constant="15" id="7eW-kz-pPD"/>
                             <constraint firstItem="q31-bg-lCF" firstAttribute="trailing" secondItem="Kqq-Ic-kXs" secondAttribute="trailing" constant="15" id="HBr-DY-zGk"/>
-                            <constraint firstItem="Kqq-Ic-kXs" firstAttribute="top" secondItem="q31-bg-lCF" secondAttribute="top" id="ueX-fj-jBX"/>
+                            <constraint firstItem="Kqq-Ic-kXs" firstAttribute="top" secondItem="q31-bg-lCF" secondAttribute="top" constant="25" id="ueX-fj-jBX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q31-bg-lCF"/>
                     </view>
@@ -438,6 +550,30 @@
             </objects>
             <point key="canvasLocation" x="5312" y="633"/>
         </scene>
+        <!--Account-->
+        <scene sceneID="xYN-in-cj5">
+            <objects>
+                <navigationController id="GTm-MB-kLC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Account" image="person.circle" catalog="system" id="PAC-lt-fTP">
+                        <color key="badgeColor" name="orange-sunset"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VHp-31-gVU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="orange-sunset"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="blue-sky"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nhf-1S-aQe" kind="relationship" relationship="rootViewController" id="O5K-ww-1lE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMf-ai-JtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="1785"/>
+        </scene>
         <!--Log Meal View Controller-->
         <scene sceneID="IFD-se-5bL">
             <objects>
@@ -586,11 +722,12 @@
                         <viewLayoutGuide key="safeArea" id="CCj-np-eEg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="person.circle" catalog="system" id="Zdr-XG-1PR"/>
+                    <navigationItem key="navigationItem" id="smg-5e-Kqc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFk-zP-mpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="1785"/>
+            <point key="canvasLocation" x="2893" y="1785"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="n2J-zr-Qbz">
@@ -799,6 +936,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ubZ-Cx-nRI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="orange-sunset"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="blue-sky"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

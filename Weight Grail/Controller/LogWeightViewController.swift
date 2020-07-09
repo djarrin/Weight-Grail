@@ -62,6 +62,7 @@ class LogWeightViewController: UITableViewController, UIPickerViewDelegate, UIPi
                 self.databaseRef.child("\(basePath)/\(Constants.WeightFields.imagePath)").setValue(metadata.path)
             }
         }
+        dismiss(animated: true, completion: nil)
     }
     
     func configureStorageRef() {

@@ -13,7 +13,7 @@ class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Account"
     }
     
     @IBAction func logout(){

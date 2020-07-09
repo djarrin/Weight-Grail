@@ -17,6 +17,7 @@ class HistoryViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "History"
         configureDatabase()
     }
         
